@@ -1,0 +1,30 @@
+# for Large Files 
+*.sav filter=lfs diff=lfs merge=lfs -text
+
+# consistent line endings for Python, HTML, CSS, and JS
+*.py text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.sqlite3 binary
+*.pkl binary
+*.h5 binary
+
+# Django migrations
+*/migrations/* text
+
+# Database and environment files to avoid merge conflicts
+db.sqlite3 binary
+*.env merge=ours
+
+# Jupyter notebooks
+*.ipynb text merge=union
+
+# Normalize line endings for all text files
+* text=auto

@@ -1,0 +1,267 @@
+{% extends "base.html" %} 
+ 
+{% block siteTitle %}HOME{% endblock siteTitle %} 
+ 
+{% block navActiveHome %}active{% endblock navActiveHome %} 
+ 
+{% block body %}   
+    {% comment %} FORM STARTS {% endcomment %}
+    <div class="container my-4 col-md-6 card py-3 shadow-lg"> 
+        <h2 class="text-center">ADD VALUES FOR PREDICTION</h2> 
+        <hr> 
+        <form action="result"> 
+        {% csrf_token %} 
+            <div class="mb-3"> 
+                <label for="city" class="form-label">City</label> 
+                    <select class="form-select" name="city" aria-label="Default select example" required>
+                        <option value="" selected>Select...</option>
+                        <option value="38">city_1</option>
+                        <option value="46">city_2</option>
+                        <option value="81">city_7</option>
+                        <option value="92">city_8</option>
+                        <option value="99">city_9</option>
+                        <option value="36">city_10</option>
+                        <option value="37">city_11</option>
+                        <option value="39">city_12</option>
+                        <option value="40">city_13</option>
+                        <option value="41">city_14</option>
+                        <option value="43">city_16</option>
+                        <option value="44">city_18</option>
+                        <option value="45">city_19</option>          
+                        <option value="47">city_20</option>
+                        <option value="48">city_21</option>
+                        <option value="49">city_23</option>
+                        <option value="50">city_24</option>
+                        <option value="51">city_25</option>
+                        <option value="52">city_26</option>
+                        <option value="53">city_27</option>
+                        <option value="54">city_28</option>
+                        <option value="55">city_30</option>
+                        <option value="56">city_31</option>
+                        <option value="57">city_33</option>
+                        <option value="58">city_36</option>
+                        <option value="59">city_37</option>
+                        <option value="60">city_39</option>
+                        <option value="61">city_40</option>
+                        <option value="62">city_41</option>
+                        <option value="63">city_42</option>
+                        <option value="64">city_43</option>
+                        <option value="65">city_44</option>
+                        <option value="66">city_45</option>
+                        <option value="67">city_46</option>
+                        <option value="68">city_48</option>
+                        <option value="69">city_50</option>
+                        <option value="70">city_53</option>
+                        <option value="71">city_54</option>
+                        <option value="72">city_55</option>
+                        <option value="73">city_57</option>
+                        <option value="74">city_59</option>
+                        <option value="75">city_61</option>
+                        <option value="76">city_62</option>
+                        <option value="77">city_64</option>
+                        <option value="78">city_65</option>
+                        <option value="79">city_67</option>
+                        <option value="80">city_69</option>
+                        <option value="93">city_80</option>
+                        <option value="94">city_81</option>
+                        <option value="95">city_82</option>
+                        <option value="96">city_83</option>
+                        <option value="97">city_84</option>
+                        <option value="98">city_89</option>
+                        <option value="100">city_90</option>
+                        <option value="101">city_91</option>
+                        <option value="102">city_93</option>
+                        <option value="103">city_94</option>
+                        <option value="104">city_97</option>
+                        <option value="105">city_98</option>
+                        <option value="106">city_99</option>
+                        <option value="87">city_100</option>
+                        <option value="88">city_101</option>
+                        <option value="89">city_102</option>
+                        <option value="90">city_103</option>
+                        <option value="91">city_104</option>
+                        <option value="92">city_105</option>
+                        <option value="93">city_106</option>
+                        <option value="94">city_107</option>
+                        <option value="95">city_109</option>
+                        <option value="96">city_111</option>
+                        <option value="97">city_114</option>
+                        <option value="98">city_115</option>
+                        <option value="99">city_116</option>
+                        <option value="100">city_117</option>
+                        <option value="101">city_118</option>
+                        <option value="102">city_120</option>
+                        <option value="103">city_121</option>
+                        <option value="104">city_123</option>
+                        <option value="105">city_126</option>
+                        <option value="106">city_127</option>
+                        <option value="107">city_128</option>
+                        <option value="108">city_129</option>
+                        <option value="109">city_131</option>
+                        <option value="110">city_133</option>
+                        <option value="111">city_134</option>
+                        <option value="112">city_136</option>
+                        <option value="113">city_138</option>
+                        <option value="114">city_139</option>
+                        <option value="115">city_140</option>
+                        <option value="116">city_141</option>
+                        <option value="117">city_142</option>
+                        <option value="118">city_143</option>
+                        <option value="119">city_144</option>
+                        <option value="120">city_145</option>
+                        <option value="121">city_146</option>
+                        <option value="122">city_149</option>
+                        <option value="42">city_150</option>
+                        <option value="123">city_152</option>
+                        <option value="124">city_155</option>
+                        <option value="125">city_157</option>
+                        <option value="126">city_158</option>
+                        <option value="127">city_159</option>
+                        <option value="128">city_160</option>
+                        <option value="129">city_162</option>
+                        <option value="130">city_165</option>
+                        <option value="131">city_166</option>
+                        <option value="132">city_167</option>
+                        <option value="133">city_171</option>
+                        <option value="134">city_173</option>
+                        <option value="135">city_175</option>
+                        <option value="136">city_176</option>
+                        <option value="137">city_179</option>
+                        <option value="138">city_180</option>             
+                    </select>
+            </div> 
+            <div class="mb-3"> 
+                <label for="cdi" class="form-label">City Development Index</label> 
+                <input name="cdi" type="text" class="form-control" min="0" max="1" placeholder="Min 0.001 - Max 0.999" required> 
+            </div>
+            <div class="mb-3">
+                <label for="gender" class="form-label">Gender</label> 
+                <select class="form-select" name="gender" aria-label="Default select example" required>
+                    <option value="" selected>Select...</option>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                    <option value="2">Other</option>
+                  </select> 
+            </div>
+            <div class="mb-3">
+                <label for="relevent_experience" class="form-label">Relevant Experience</label> 
+                <select class="form-select" name="relevent_experience" aria-label="Default select example" required>
+                    <option value="" selected>Select....</option>
+                    <option value="0">Has Relevant Experience</option>
+                    <option value="1">No Relevant Experience</option>
+                  </select>  
+            </div>
+            <div class="mb-3">
+                <label for="enrolled_university" class="form-label">Enrolled University</label> 
+                <select class="form-select" name="enrolled_university" aria-label="Default select example" required>
+                    <option value="" selected>Select...</option>
+                    <option value="2">No Enrollment</option>
+                    <option value="0">Full Time Course</option>
+                    <option value="1">Part time</option>
+                  </select> 
+            </div>
+            <div class="mb-3"> 
+                <label for="education_level" class="form-label">Education Level</label> 
+                <select class="form-select" name="education_level" aria-label="Default select example">
+                    <option value="" selected>Select...</option>  
+                    <option value="1">Highschool</option>
+                    <option value="4">Primary School</option>
+                    <option value="0">Graduate</option>
+                    <option value="2">Masters</option>
+                    <option value="3">Phd</option>
+                  </select> 
+            </div> 
+            <div class="mb-3"> 
+                <label for="major_discipline" class="form-label">Major Discipline</label> 
+                <select class="form-select" name="major_discipline" aria-label="Default select example" required>
+                    <option value="" selected>Select...</option>  
+                    <option value="0">Arts</option>
+                    <option value="1">Business Degree</option>
+                    <option value="2">Humanities</option>
+                    <option value="5">STEM</option>
+                    <option value="3">No Major</option>
+                    <option value="4">Other</option>
+                  </select> 
+            </div> 
+            <div class="mb-3"> 
+                <label for="experience" class="form-label">Experience</label> 
+                <select class="form-select" name="experience" aria-label="Default select example" required>
+                    <option value="" selected>Select...</option>
+                    <option value="0">0 Year</option> 
+                    <option value="1">1 Year</option>
+                    <option value="12">2 Years</option>
+                    <option value="14">3 Years</option>
+                    <option value="15">4 Years</option>
+                    <option value="16">5 Years</option>
+                    <option value="17">6 Years</option>
+                    <option value="18">7 Years</option>
+                    <option value="19">8 Years</option>
+                    <option value="20">9 Years</option>
+                    <option value="2">10 Years</option>
+                    <option value="3">11 Years</option>
+                    <option value="4">12 Years</option>
+                    <option value="5">13 Years</option>
+                    <option value="6">14 Years</option>
+                    <option value="7">15 Years</option>
+                    <option value="8">16 Years</option>
+                    <option value="9">17 Years</option>
+                    <option value="10">18 Years</option>
+                    <option value="11">19 Years</option>
+                    <option value="13">20+ Years</option>
+                  </select> 
+            </div>
+            <div class="mb-3"> 
+                <label for="company_size" class="form-label">Company Size</label> 
+                <select class="form-select" name="company_size" aria-label="Default select example" required>
+                    <option value="" selected>Select...</option>
+                    <option value="6">&lt; 10</option>
+                    <option value="7">10 - 49</option>
+                    <option value="3">50 - 99</option>
+                    <option value="0">100 - 500</option>
+                    <option value="4">500 - 999</option>
+                    <option value="1">1000 - 4999</option>
+                    <option value="5">5000 - 9999</option>
+                    <option value="8">Unknown</option>
+                  </select> 
+            </div> 
+            <div class="mb-3"> 
+                <label for="company_type" class="form-label">Company Type</label> 
+                <select class="form-select" name="company_type" aria-label="Default select example" required>
+                    <option value="" selected>Select...</option>
+                    <option value="0">Early Stage Startup</option>
+                    <option value="1">Funded Startup</option>
+                    <option value="2">NGO</option>
+                    <option value="4">Public Sector</option>
+                    <option value="5">Pvt Ltd</option>
+                    <option value="3">Other</option>
+                    <option value="6">Unknown</option>
+                  </select> 
+            </div> 
+            <div class="mb-3"> 
+                <label for="last_new_job" class="form-label">Last New Job</label> 
+                <select class="form-select" name="last_new_job" aria-label="Default select example" required>
+                    <option value="" selected>Select...</option>
+                    <option value="0">Never</option>
+                    <option value="1">1 Year Ago</option>
+                    <option value="2">2 Year Ago</option>
+                    <option value="3">3 Year Ago</option>
+                    <option value="4">4 Year Ago</option>
+                    <option value="5">4+ Year Ago</option>
+                  </select> 
+            </div> 
+            <div class="mb-3"> 
+                <label for="training_hours" class="form-label">Training Hours</label> 
+                <select class="form-select" name="training_hours" aria-label="Default select example" required>
+                    <option value="" selected>Select...</option>
+                    {% for num in range %}
+                    <option value="{{ num }}">{{ num }}</option>
+                    {% endfor %}
+                  </select>
+            </div> 
+            <div class="text-center"> 
+                <button type="submit" class="btn btn-success">PREDICT</button> 
+            </div> 
+        </form> 
+    </div> 
+    {% comment %} FORM ENDS {% endcomment %}
+{% endblock body %}
